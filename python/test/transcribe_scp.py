@@ -7,7 +7,7 @@ import sys
 from multiprocessing.dummy import Pool
 from vosk import Model, KaldiRecognizer
 
-model = Model("en-us")
+model = Model(r'D:\vosk-model-es-0.42')
 
 def recognize(line):
     uid, fn = line.split()
